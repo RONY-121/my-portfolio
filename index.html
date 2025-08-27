@@ -5,138 +5,140 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rony's Portfolio</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
+    * {
       margin: 0;
       padding: 0;
-      background: linear-gradient(to right, #74ebd5, #ACB6E5);
+      box-sizing: border-box;
+    }
+    body {
+      font-family: "Poppins", sans-serif;
+      background: #f4f4f9;
       color: #333;
+      line-height: 1.6;
     }
-
     header {
-      background: #222;
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
       color: white;
-      padding: 40px 20px;
       text-align: center;
+      padding: 50px 20px;
     }
-
     header h1 {
       font-size: 2.5rem;
-      margin-bottom: 10px;
     }
-
     header p {
+      margin-top: 10px;
       font-size: 1.2rem;
-      margin: 0;
     }
-
     nav {
-      background: #444;
+      background: #222;
+      color: white;
       display: flex;
       justify-content: center;
-      padding: 10px;
+      gap: 20px;
+      padding: 15px;
     }
-
     nav a {
       color: white;
-      margin: 0 15px;
       text-decoration: none;
       font-weight: bold;
+      transition: 0.3s;
     }
-
     nav a:hover {
-      color: #ffcc00;
+      color: #00c3ff;
     }
-
     section {
-      max-width: 800px;
-      margin: 30px auto;
-      padding: 20px;
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
     }
-
     section h2 {
-      color: #444;
-      margin-bottom: 15px;
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 2rem;
+      color: #222;
     }
-
-    ul {
-      list-style-type: square;
-      text-align: left;
-      padding-left: 20px;
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
     }
-
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
     footer {
       background: #222;
       color: white;
       text-align: center;
       padding: 20px;
-      margin-top: 30px;
+      margin-top: 20px;
+    }
+    footer a {
+      color: #00c3ff;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Welcome to Rony's Portfolio</h1>
-    <p>🌐 Web Developer | 💻 Learner | 🚀 Dreamer</p>
+    <h1>Hi, I'm Rony 👋</h1>
+    <p>Web Developer | Freelancer | Dreamer</p>
   </header>
 
   <nav>
     <a href="#about">About</a>
+    <a href="#skills">Skills</a>
     <a href="#projects">Projects</a>
     <a href="#contact">Contact</a>
   </nav>
-   <section>
-  <h2>About Me</h2>
-  <div class="card">
-    <h3>Roknuzzaman Rony</h3>
-    <p><strong>Address:</strong> Dhaka, Bangladesh</p>
-    <p><strong>Email:</strong> roknuzzamanronyop@gmail.com</p>
-  </div>
-</section>
 
-<style>
-  .card {
-    background: white;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 400px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    text-align: left;
-  }
-  .card h3 {
-    margin-top: 0;
-    color: #333;
-  }
-  .card p {
-    margin: 5px 0;
-    font-size: 16px;
-  }
-</style>
   <section id="about">
     <h2>About Me</h2>
-    <p>Hello! I'm <b>Rony</b>. I love coding, learning new technologies, and building awesome websites.</p>
+    <p>Hello! I'm <b>Rony</b>, a passionate web developer who loves creating modern websites. 
+    I aim to work with international clients as a freelancer and build awesome projects!</p>
   </section>
- <section id="contact">
-  <h2>Contact</h2>
-  <p>Email: <a href="mailto:roknuzzamanronyop@gmail.com">rony@example.com</a></p>
-  <p>GitHub: <a href="https://github.com/RONY-121" target="_blank">github.com/RONY-121</a></p>
-  <p>📍 Address:Parkhajura,jessore, Dhaka, Bangladesh</p>
-</section>
+
+  <section id="skills">
+    <h2>My Skills</h2>
+    <p>✅ HTML, CSS, JavaScript<br>
+       ✅ Responsive Web Design<br>
+       ✅ Git & GitHub<br>
+       ✅ Basic Python (optional add here)</p>
+  </section>
+
   <section id="projects">
     <h2>Projects</h2>
-    <ul>
-      <li><a href="#">Portfolio Website</a> – My personal portfolio</li>
-      <li><a href="#">Blog Site</a> – A simple blog using HTML & CSS</li>
-      <li><a href="#">Calculator App</a> – Small JavaScript project</li>
-    </ul>
+    <div class="projects">
+      <div class="card">
+        <h3>Portfolio Website</h3>
+        <p>A personal portfolio built with HTML, CSS, and JS.</p>
+      </div>
+      <div class="card">
+        <h3>Landing Page</h3>
+        <p>A modern landing page design for businesses.</p>
+      </div>
+      <div class="card">
+        <h3>Blog Website</h3>
+        <p>A simple blog layout built with responsive design.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:rony@example.com">roknuzzamanronyop@gmail.com</a></p>
+    <p>Home: parkhajura,jessore,bangladesh</p>
+    <p>LinkedIn: <a href="#">linkedin.com/in/rony</a></p>
   </section>
 
   <footer>
-    <p>© 2025 Rony | Made with love and HTML & CSS</p>
+    <p>© 2025 Rony | Made with love by Me</p>
   </footer>
 </body>
 </html>
