@@ -7,47 +7,115 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      text-align: center;
-      background-color: #f4f4f9;
       margin: 0;
       padding: 0;
+      background: linear-gradient(to right, #74ebd5, #ACB6E5);
+      color: #333;
     }
+
     header {
-      background: #333;
+      background: #222;
       color: white;
-      padding: 20px;
+      padding: 40px 20px;
+      text-align: center;
     }
-    section {
-      margin: 20px;
-      padding: 20px;
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
     }
-    a {
-      color: blue;
+
+    header p {
+      font-size: 1.2rem;
+      margin: 0;
+    }
+
+    nav {
+      background: #444;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
       text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #ffcc00;
+    }
+
+    section {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    section h2 {
+      color: #444;
+      margin-bottom: 15px;
+    }
+
+    ul {
+      list-style-type: square;
+      text-align: left;
+      padding-left: 20px;
+    }
+
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Welcome to Rony's Portfolio</h1>
-    <p>Web Developer | Learner | Dreamer</p>
+    <p>🌐 Web Developer | 💻 Learner | 🚀 Dreamer</p>
   </header>
 
-  <section>
-    <h2>About Me</h2>
-    <p>Hello! I'm Rony. I love coding and building websites.</p>
-  </section>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-  <section>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I'm <b>Rony</b>. I love coding, learning new technologies, and building awesome websites.</p>
+  </section>
+ <section id="contact">
+  <h2>Contact</h2>
+  <p>Email: <a href="mailto:rony@example.com">rony@example.com</a></p>
+  <p>GitHub: <a href="https://github.com/RONY-121" target="_blank">github.com/RONY-121</a></p>
+  <p>📍 Address:Parkhajura,jessore, Dhaka, Bangladesh</p>
+</section>
+  <section id="projects">
     <h2>Projects</h2>
     <ul>
-      <li><a href="#">Project 1</a></li>
-      <li><a href="#">Project 2</a></li>
+      <li><a href="#">Portfolio Website</a> – My personal portfolio</li>
+      <li><a href="#">Blog Site</a> – A simple blog using HTML & CSS</li>
+      <li><a href="#">Calculator App</a> – Small JavaScript project</li>
     </ul>
   </section>
 
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:rony@example.com">rony@example.com</a></p>
+    <p>GitHub: <a href="https://github.com/RONY-121" target="_blank">github.com/RONY-121</a></p>
+  </section>
+
   <footer>
-    <p>© 2025 Rony | Contact: rony@example.com</p>
+    <p>© 2025 Rony | Made with love and HTML & CSS</p>
   </footer>
 </body>
 </html>
